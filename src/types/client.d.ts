@@ -11,6 +11,7 @@ export type NewClientInput = {
 };
 
 export type UpdateClientInput = {
+  backupShare?: string;
   email?: string;
   firstName?: string;
   lastName?: string;

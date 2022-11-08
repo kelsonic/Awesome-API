@@ -55,11 +55,10 @@ class ClientService {
   }
 
   private cleanUpdateInput(input: UpdateClientInput): UpdateClientInput {
-    return pick(input, ["email", "firstName", "lastName"]);
+    return pick(input, ["email", "firstName", "lastName", "backupShare"]);
   }
 
   private validateCreateInput(input: NewClientInput): void {
-    const cleanedInput: NewClientInput = this.cleanCreateInput(input);
     try {
       assert(
         input,

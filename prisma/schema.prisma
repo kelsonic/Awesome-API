@@ -11,11 +11,12 @@ datasource db {
 }
 
 model Client {
-  createdAt DateTime         @default(now())
-  email     String           @unique
-  firstName String?
-  id        String              @id @default(cuid())
-  lastName  String?
-  password  String
-  updatedAt DateTime         @updatedAt
+  backupShare String?
+  createdAt   DateTime @default(now())
+  email       String   @unique
+  firstName   String?
+  id          String   @id @default(cuid())
+  lastName    String?
+  password    String
+  updatedAt   DateTime @updatedAt
 }
