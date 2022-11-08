@@ -97,6 +97,7 @@ class ClientService {
     }
 
     return {
+      backupShare: client.backupShare,
       createdAt: client.createdAt,
       email: client.email,
       firstName: client.firstName,
