@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "./",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  }
+}
