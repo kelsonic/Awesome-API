@@ -79,6 +79,7 @@ class ClientService {
       assert(
         input,
         object({
+          backupShare: optional(string()),
           email: optional(
             refine(string(), "email", (v) => isEmail.validate(v))
           ),
